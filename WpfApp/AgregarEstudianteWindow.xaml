@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp.AgregarEstudianteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Agregar Estudiante" Height="350" Width="400">
+    <StackPanel Margin="20" VerticalAlignment="Center">
+
+        <TextBlock Text="Nombre:" />
+        <TextBox x:Name="txtNombre" />
+
+        <TextBlock Text="Matrícula:" Margin="0,10,0,0" />
+        <TextBox x:Name="txtMatricula" />
+
+        <TextBlock Text="Grupo:" Margin="0,10,0,0" />
+        <ComboBox x:Name="cmbGrupo">
+        </ComboBox>
+
+        <TextBlock Text="Asignatura:" Margin="0,10,0,0" />
+        <ComboBox x:Name="cmbAsignatura">
+        </ComboBox>
+
+        <TextBlock Text="Tipo de Estudiante:" Margin="0,10,0,0" />
+        <ComboBox x:Name="cmbTipoEstudiante" SelectedIndex="0">
+            <ComboBoxItem Content="Presencial" />
+            <ComboBoxItem Content="A Distancia" />
+        </ComboBox>
+
+        <Button Content="Guardar" Click="BtnGuardar_Click" Margin="0,20,0,0" Height="30" />
+
+    </StackPanel>
+</Window>
